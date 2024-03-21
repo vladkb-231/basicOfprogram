@@ -12,3 +12,7 @@
 3	466	7327338360669546	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	483e5e724f5ae458
 466	641	7327338362435112	libs/data_structures/libdata_structures.a	e4ece97c19267e45
 641	1294	7327338368947148	course.exe	b00280479a7ee17e
+3	110	7327351905285687	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+110	245	7327351906632086	course.exe	b00280479a7ee17e
+3	842	7327451541185864	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+842	1481	7327451547536946	course.exe	b00280479a7ee17e
