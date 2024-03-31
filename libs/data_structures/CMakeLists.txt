@@ -4,4 +4,6 @@ add_library(data_structures
         unorderd_array_set/unordered_array_set.h
         vector/vector.h
         vector/vector.c
+        matrix/matrix.h
+        matrix/matrix.c
 )
