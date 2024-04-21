@@ -323,6 +323,34 @@ void print_matrix_min_standard ( matrix *ms , int nMatrix ) {
             outputMatrix (ms[ matrix ]);
     }
 }
+// task 16
+int min2 (int a, int b) {
+    return (a < b ? a : b);
+}
+int getNSpecialElement2 ( matrix m) {
+    int nSpecial = 0;
+    for ( int i = 0; i < m. nRows ; i ++) {
+        for ( int j = 0; j < m. nCols ; j ++) {
+            int isSpecial = 1;
+            for ( int k = 0; k < j; k++) {
+                if (m. values [i][k] >= m. values [i][j]) {
+                    isSpecial = 0;
+                    break ;
+                }
+            }
+            for ( int k = j + 1; k < m. nCols ; k ++) {
+                if (m. values [i][k] <= m. values [i][j]) {
+                    isSpecial = 0;
+                    break ;
+                }
+            }
+            if ( isSpecial ) {
+                nSpecial ++;
+            }
+        }
+    }
+    return nSpecial ;
+}
 
 
 
