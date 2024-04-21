@@ -295,7 +295,7 @@ void printMatrixWithMaxZeroRows ( matrix *ms , int nMatrix ) {
         if ( amount_zero_rows > max_zero_rows )
             max_zero_rows = amount_zero_rows ;
     }
-    for ( int i = 0; i < nMatrix ; i ++)
+    for (int i = 0; i < nMatrix ; i ++)
         if ( amount_zero [i] == max_zero_rows )
             outputMatrix (*( ms + i));
 }
