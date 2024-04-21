@@ -131,7 +131,24 @@ long long findSumOfMaxesOfPseudoDiagonal ( matrix m) {
     }
     return result ;
 }
-
+// task 8
+int getMinInArea ( matrix m) {
+    position max = getMaxValuePos (m);
+    int min = m. values [ max . rowIndex ][ max . rowIndex ];
+    int range = 0;
+    while ( max . rowIndex >= 0) {
+        for ( int col = (( max. colIndex - range ) < 0 ? 0 :
+                         max . colIndex - range );
+              col < (( max . colIndex + range + 1) > m. nCols ?
+                     m. nCols : max. colIndex + range + 1); col ++) {
+            if ( min > m. values [max. rowIndex ][ col ])
+                min = m. values [ max . rowIndex ][ col ];
+        }
+        max . rowIndex --;
+        range ++;
+    }
+    return min;
+}
 
 
 
