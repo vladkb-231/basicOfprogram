@@ -44,3 +44,17 @@ void sortRowsByMinElement ( matrix m) {
     insertionSortRowsMatrixByRowCriteria (m, getMax );
 }
 
+// task 3
+int getMin ( int *a, int n) {
+    int min_num = a [0];
+    for ( int i = 0; i < n; i++) {
+        if (a[i] < min_num )
+            min_num = a[i];
+    }
+    return min_num ;
+}
+void sortColsByMinElement ( matrix m) {
+    selectionSortColsMatrixByColCriteria (m, getMin );
+}
+
+
