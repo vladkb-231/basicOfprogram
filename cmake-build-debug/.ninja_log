@@ -1,20 +1,13 @@
 # ninja log v5
 7	70	7322858168069265	CMakeFiles/course.dir/libs/algoritms/algoritms.c.obj	ccd69139a068c921
-3	842	7327451541185864	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+4	118	7335723206482057	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
 12	110	7322858168468192	CMakeFiles/course.dir/libs/algoritms/array/array.c.obj	7d200144bbc8bd1e
 51	152	7322858168897042	libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj	17b3760bd6719c9f
 39	114	7322858168508094	libs/algoritms/CMakeFiles/algoritms.dir/algoritms.c.obj	1ae59b63c09827be
 25	128	7322858168647712	libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj	4b1394dfcf2987b7
 9	95	7322858850665911	libs/algoritms/libalgoritms.a	560e500c874857bb
 3	98	7322858850675649	libs/data_structures/CMakeFiles/data_structures.dir/unorderd_array_set/unordered_array_set.c.obj	e2817990c45e040d
-466	641	7327338362435112	libs/data_structures/libdata_structures.a	e4ece97c19267e45
-842	1481	7327451547536946	course.exe	b00280479a7ee17e
-3	466	7327338360669546	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	483e5e724f5ae458
-4	321	7335721835126730	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
-10	322	7335721835126730	libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj	30a13678e95e8c5
 323	562	7335721837558894	libs/data_structures/libdata_structures.a	5bb6a5f5b6d60f6c
-562	1039	7335721842296525	course.exe	b00280479a7ee17e
-3	173	7335722881169614	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
-173	292	7335722882346223	course.exe	b00280479a7ee17e
-4	118	7335723206482057	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
 119	238	7335723207668930	course.exe	b00280479a7ee17e
+3	466	7327338360669546	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	483e5e724f5ae458
+10	322	7335721835126730	libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj	30a13678e95e8c5
