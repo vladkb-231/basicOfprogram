@@ -79,5 +79,28 @@ void getSquareOfMatrixIfSymmetric ( matrix *m) {
     m-> nCols = result . nCols ;
 }
 
+// task 5
+bool isUnique ( long long *a, int n) {
+    for ( int i = 0; i < n; i++)
+        for ( int j = i + 1; j < n; j ++)
+            if (a[i] == a[j])
+                return false ;
+    return true ;
+}
+long long getSum (int *a, int n) {
+    long long int result = 0;
+    for ( int i = 0; i < n; i++)
+        result += a[i];
+    return result ;
+}
+void transposeIfMatrixHasNotEqualSumOfRows ( matrix m) {
+    long long int sum[m. nRows ];
+    for ( int i = 0; i < m. nRows ; i ++)
+        sum [i] = getSum (m. values [i], m. nCols );
+    if ( isUnique (sum , m. nRows ))
+        transposeSquareMatrix (&m);
+}
+
+
 
 
