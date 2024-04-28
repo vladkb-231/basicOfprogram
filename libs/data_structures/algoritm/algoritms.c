@@ -276,3 +276,32 @@ int getNSpecialElement2(matrix m) {
     return amount;
 }
 
+double getScalarProduct(int *a, int *b, int n) {
+    double sum = 0.0;
+    for (int i = 0; i < n; i++)
+        sum += (double) a[i] * b[i];
+    return sum;
+}
+double getVectorLength(int *a, int n) {
+    double sum = getScalarProduct(a, a, n);
+    double length = sqrt(sum);
+    return length;
+}
+double getCosine(int *a, int *b, int n) {
+    double scalar_product = getScalarProduct(a, b, n);
+    double length_first_vector = getVectorLength(a, n);
+    double length_second_vector = getVectorLength(b, n);
+    return scalar_product / (length_first_vector * length_second_vector);
+}
+int getVectorIndexWithMaxAngle(matrix m, int *v) {
+    double max_cosine = getCosine(m.values[0], v, m.nCols);
+    int max_index = 0;
+    for (int i = 0; i < m.nRows; i++) {
+        double cosine = getCosine(m.values[i], v, m.nCols);
+        if (cosine < max_cosine) {
+            max_cosine = cosine;
+            max_index = i;}
+    }
+    return max_index;
+}
+
