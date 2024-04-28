@@ -33,5 +33,30 @@ int getMin(int *a, const int n) {
 void sortColsByMinElem(matrix *m) {
     selectionSortColsMatrixByColCriteria(*m, getMin);
 }
+matrix mulMatrices(matrix m1, matrix m2) {
+    if (m1.nCols != m2.nRows) {
+        fprintf(stderr, "Different matrix dimensions");
+        exit(1);
+    }
+    matrix result = getMemMatrix(m1.nRows, m2.nRows);
+    for (int i = 0; i < m1.nRows; i++) {
+        for (int j = 0; j < m2.nCols; j++) {
+            result.values[i][j] = 0;
+            for (int h = 0; h < m2.nCols; h++) {
+                result.values[i][j] += m1.values[i][h] * m2.values[h][j];
+            }
+        }
+    }
+    return result;
+}
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (!isSymmetricMatrix(m))
+        return;
+    matrix result = mulMatrices(*m, *m);
+    freeMemMatrix(m);
+    m->values = result.values;
+    m->nRows = result.nRows;
+    m->nCols = result.nCols;
+}
 
 
