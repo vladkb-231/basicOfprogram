@@ -29,3 +29,7 @@ int getMin(int *a, const int n) {
             min = a[i];
     return min;
 }
+
+void sortColsByMinElem(matrix *m) {
+    selectionSortColsMatrixByColCriteria(*m, getMin);
+}
