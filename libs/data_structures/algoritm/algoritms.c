@@ -172,6 +172,21 @@ int getNSpecialElement(matrix m) {
     }
     return amount_elem;
 }
+position getLeftMin(matrix m) {
+    position pos_min = getMinValuePos(m);
+    return pos_min;
+}
+void swapPenultimateRow(matrix *m) {
+    if (m->nRows < 2)
+        return;
+    position pos_min = getLeftMin(*m);
+    int *temp = (int *) malloc(sizeof(int) * m->nRows);
+    for (int i = 0; i < m->nRows; i++)
+        temp[i] = m->values[i][pos_min.colIndex];
+    for (int i = 0; i < m->nCols; i++)
+        m->values[m->nRows - 2][i] = temp[i];
+    free(temp);
+}
 
 
 
