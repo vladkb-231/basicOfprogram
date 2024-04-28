@@ -11,3 +11,9 @@
 119	238	7335723207668930	course.exe	b00280479a7ee17e
 3	466	7327338360669546	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	483e5e724f5ae458
 10	322	7335721835126730	libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj	30a13678e95e8c5
+20	335	7355640081001122	libs/algoritms/libalgoritms.a	df6f70e46e375b1f
+15	770	7355640085309448	libs/data_structures/CMakeFiles/data_structures.dir/algoritm/algoritms.c.obj	86a1e9f089b15ad2
+10	772	7355640085309448	CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj	4b51ffe78032828
+10	148	7355640411248580	libs/data_structures/libdata_structures.a	42784d414de019c0
+4	135	7355640747564103	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+136	675	7355640752944663	course.exe	1c1ade8396a50692

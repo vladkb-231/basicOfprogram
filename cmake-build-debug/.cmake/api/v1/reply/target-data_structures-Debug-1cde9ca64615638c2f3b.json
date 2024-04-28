@@ -134,12 +134,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libs/data_structures/lab_tasks/lab_tasks.c",
+			"path" : "libs/data_structures/algoritm/algoritms.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "libs/data_structures/lab_tasks/lab_tasks.h",
+			"path" : "libs/data_structures/algoritm/algoritms.h",
 			"sourceGroupIndex" : 1
 		}
 	],

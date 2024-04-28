@@ -6,8 +6,8 @@ set(CMAKE_C_STANDARD 11)
 add_executable(course main.c
         libs/algoritms/array/array.h
         libs/algoritms/array/array.c
-        libs/algoritms/algoritms.h
-        libs/algoritms/algoritms.c
+        libs/data_structures/algoritm/algoritms.h
+        libs/data_structures/algoritm/algoritms.c
 )
 add_subdirectory(libs)
 target_link_libraries(course data_structures)

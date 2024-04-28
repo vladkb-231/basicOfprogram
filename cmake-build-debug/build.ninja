@@ -61,11 +61,11 @@ build CMakeFiles/course.dir/libs/algoritms/array/array.c.obj: C_COMPILER__course
   OBJECT_DIR = CMakeFiles\course.dir
   OBJECT_FILE_DIR = CMakeFiles\course.dir\libs\algoritms\array
 
-build CMakeFiles/course.dir/libs/algoritms/algoritms.c.obj: C_COMPILER__course_unscanned_Debug D$:/course/libs/algoritms/algoritms.c || cmake_object_order_depends_target_course
-  DEP_FILE = CMakeFiles\course.dir\libs\algoritms\algoritms.c.obj.d
+build CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj: C_COMPILER__course_unscanned_Debug D$:/course/libs/data_structures/algoritm/algoritms.c || cmake_object_order_depends_target_course
+  DEP_FILE = CMakeFiles\course.dir\libs\data_structures\algoritm\algoritms.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\course.dir
-  OBJECT_FILE_DIR = CMakeFiles\course.dir\libs\algoritms
+  OBJECT_FILE_DIR = CMakeFiles\course.dir\libs\data_structures\algoritm
 
 
 # =============================================================================
@@ -75,7 +75,7 @@ build CMakeFiles/course.dir/libs/algoritms/algoritms.c.obj: C_COMPILER__course_u
 #############################################
 # Link the executable course.exe
 
-build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c.obj CMakeFiles/course.dir/libs/algoritms/array/array.c.obj CMakeFiles/course.dir/libs/algoritms/algoritms.c.obj | libs/data_structures/libdata_structures.a libs/algoritms/libalgoritms.a || libs/algoritms/libalgoritms.a libs/data_structures/libdata_structures.a
+build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c.obj CMakeFiles/course.dir/libs/algoritms/array/array.c.obj CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj | libs/data_structures/libdata_structures.a libs/algoritms/libalgoritms.a || libs/algoritms/libalgoritms.a libs/data_structures/libdata_structures.a
   FLAGS = -g
   LINK_LIBRARIES = libs/data_structures/libdata_structures.a  libs/algoritms/libalgoritms.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\course.dir
@@ -174,11 +174,11 @@ build libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: C
   OBJECT_DIR = libs\data_structures\CMakeFiles\data_structures.dir
   OBJECT_FILE_DIR = libs\data_structures\CMakeFiles\data_structures.dir\matrix
 
-build libs/data_structures/CMakeFiles/data_structures.dir/lab_tasks/lab_tasks.c.obj: C_COMPILER__data_structures_unscanned_Debug D$:/course/libs/data_structures/lab_tasks/lab_tasks.c || cmake_object_order_depends_target_data_structures
-  DEP_FILE = libs\data_structures\CMakeFiles\data_structures.dir\lab_tasks\lab_tasks.c.obj.d
+build libs/data_structures/CMakeFiles/data_structures.dir/algoritm/algoritms.c.obj: C_COMPILER__data_structures_unscanned_Debug D$:/course/libs/data_structures/algoritm/algoritms.c || cmake_object_order_depends_target_data_structures
+  DEP_FILE = libs\data_structures\CMakeFiles\data_structures.dir\algoritm\algoritms.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = libs\data_structures\CMakeFiles\data_structures.dir
-  OBJECT_FILE_DIR = libs\data_structures\CMakeFiles\data_structures.dir\lab_tasks
+  OBJECT_FILE_DIR = libs\data_structures\CMakeFiles\data_structures.dir\algoritm
 
 
 # =============================================================================
@@ -188,7 +188,7 @@ build libs/data_structures/CMakeFiles/data_structures.dir/lab_tasks/lab_tasks.c.
 #############################################
 # Link the static library libs\data_structures\libdata_structures.a
 
-build libs/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj libs/data_structures/CMakeFiles/data_structures.dir/unorderd_array_set/unordered_array_set.c.obj libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj libs/data_structures/CMakeFiles/data_structures.dir/lab_tasks/lab_tasks.c.obj
+build libs/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj libs/data_structures/CMakeFiles/data_structures.dir/unorderd_array_set/unordered_array_set.c.obj libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj libs/data_structures/CMakeFiles/data_structures.dir/algoritm/algoritms.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = libs\data_structures\CMakeFiles\data_structures.dir
   POST_BUILD = cd .
@@ -233,12 +233,6 @@ build libs/data_structures/rebuild_cache: phony libs/data_structures/CMakeFiles/
 
 build cmake_object_order_depends_target_algoritms: phony || libs/algoritms/CMakeFiles/algoritms.dir
 
-build libs/algoritms/CMakeFiles/algoritms.dir/algoritms.c.obj: C_COMPILER__algoritms_unscanned_Debug D$:/course/libs/algoritms/algoritms.c || cmake_object_order_depends_target_algoritms
-  DEP_FILE = libs\algoritms\CMakeFiles\algoritms.dir\algoritms.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = libs\algoritms\CMakeFiles\algoritms.dir
-  OBJECT_FILE_DIR = libs\algoritms\CMakeFiles\algoritms.dir
-
 build libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj: C_COMPILER__algoritms_unscanned_Debug D$:/course/libs/algoritms/array/array.c || cmake_object_order_depends_target_algoritms
   DEP_FILE = libs\algoritms\CMakeFiles\algoritms.dir\array\array.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
@@ -253,7 +247,7 @@ build libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj: C_COMPILER__alg
 #############################################
 # Link the static library libs\algoritms\libalgoritms.a
 
-build libs/algoritms/libalgoritms.a: C_STATIC_LIBRARY_LINKER__algoritms_Debug libs/algoritms/CMakeFiles/algoritms.dir/algoritms.c.obj libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj
+build libs/algoritms/libalgoritms.a: C_STATIC_LIBRARY_LINKER__algoritms_Debug libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = libs\algoritms\CMakeFiles\algoritms.dir
   POST_BUILD = cd .

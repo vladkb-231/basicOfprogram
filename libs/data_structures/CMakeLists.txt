@@ -6,7 +6,8 @@ add_library(data_structures
         vector/vector.c
         matrix/matrix.h
         matrix/matrix.c
-        lab_tasks/lab_tasks.c
-        lab_tasks/lab_tasks.h
+        algoritm/algoritms.c
+        algoritm/algoritms.h
 )
+
 
