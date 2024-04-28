@@ -87,4 +87,7 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
         return true;
     return false;
 }
+int max(int a, int b) {
+    return a > b ? a : b;
+}
 
