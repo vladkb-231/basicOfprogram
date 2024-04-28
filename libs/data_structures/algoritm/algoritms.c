@@ -68,4 +68,10 @@ bool isUnique(long long *a, int n) {
                 return false;
     return true;
 }
+long long getSum(int *a, int n) {
+    long long sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
+    return sum;
+}
 
