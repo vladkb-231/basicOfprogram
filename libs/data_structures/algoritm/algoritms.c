@@ -138,5 +138,26 @@ void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *,
 void sortByDistances(matrix *m) {
     insertionSortRowsMatrixByRowCriteriaF(*m, getDistance);
 }
+int cmp_long_long(const void *pa, const void *pb) {
+    return (int) (*(long long int *) pa - *(long long int *) pb);
+}
+int countNUnique(long long *a, int n) {
+    if (n == 0)
+        return 0;
+    qsort(a, n, sizeof(long long), cmp_long_long);
+    int amount_elem = 1;
+    for (int i = 1; i < n; i++)
+        if (a[i] != a[i - 1])
+            amount_elem++;
+    return amount_elem;
+}
+int countEqClassesByRowsSum(matrix m) {
+    long long sums_of_row_elements[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        sums_of_row_elements[i] = getSum(m.values[i], m.nCols);
+    int result = countNUnique(sums_of_row_elements, m.nRows);
+    return result;
+}
+
 
 
