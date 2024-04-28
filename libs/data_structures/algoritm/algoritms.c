@@ -20,3 +20,6 @@ int getMax(int *a, const int n) {
     return max;
 }
 
+void sortRowsByMaxElem(matrix *m) {
+    insertionSortRowsMatrixByRowCriteria(*m, getMax);
+}
