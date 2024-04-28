@@ -158,6 +158,20 @@ int countEqClassesByRowsSum(matrix m) {
     int result = countNUnique(sums_of_row_elements, m.nRows);
     return result;
 }
+int getNSpecialElement(matrix m) {
+    int amount_elem = 0;
+    for (int i = 0; i < m.nCols; i++) {
+        int max_value = m.values[0][i];
+        int sum = m.values[0][i];for (int j = 1; j < m.nRows; j++) {
+            sum += m.values[j][i];
+            if (m.values[j][i] > max_value)
+                max_value = m.values[j][i];
+        }
+        if (max_value > (sum - max_value))
+            amount_elem++;
+    }
+    return amount_elem;
+}
 
 
 
