@@ -235,5 +235,24 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
             outputMatrix(*ms);
 }
 
+int matrixNorm(matrix m) {
+    int max = 0;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (abs(m.values[i][j]) > max)
+                max = abs(m.values[i][j]);
+    return max;
+}
+void printMinNormMatrix(matrix *ms, int nMatrix) {
+    int min_norm = matrixNorm(ms[0]);
+    int min_index = 0;
+    for (int i = 0; i < nMatrix; i++) {
+        int norm = matrixNorm(ms[i]);
+        if (norm < min_norm) {
+            min_norm = norm;
+            min_index = i;
+        }
+    }
+    outputMatrix(ms[min_index]);}
 
 
