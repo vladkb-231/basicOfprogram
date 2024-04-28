@@ -6,6 +6,7 @@
 #include <math.h>
 #include <assert.h>
 
+
 void swapMaxMinRows(matrix *m) {
     position max_value = getMaxValuePos(*m);
     position min_value = getMinValuePos(*m);
