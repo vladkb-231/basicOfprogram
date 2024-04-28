@@ -51,3 +51,13 @@ matrix mulMatrices(matrix m1, matrix m2) {
     return result;
 }
 
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (!isSymmetricMatrix(m))
+        return;
+    matrix result = mulMatrices(*m, *m);
+    freeMemMatrix(m);
+    m->values = result.values;
+    m->nRows = result.nRows;
+    m->nCols = result.nCols;
+}
+
