@@ -75,3 +75,10 @@ long long getSum(int *a, int n) {
     return sum;
 }
 
+void transposeIfMatrixHasNotEqualSumOfRows(matrix *m) {long long sum[m->nRows];
+    for (int i = 0; i < m->nRows; i++)
+        sum[i] = getSum(m->values[i], m->nCols);
+    if (isUnique(sum, m->nRows))
+        transposeSquareMatrix(m);
+}
+
