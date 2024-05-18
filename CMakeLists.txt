@@ -9,7 +9,13 @@ add_executable(course main.c
         libs/data_structures/algoritm/algoritms.h
         libs/data_structures/algoritm/algoritms.c
 )
+add_library(string
+        string/tasks/string.h
+        string/tasks/string.c
+)
 add_subdirectory(libs)
 target_link_libraries(course data_structures)
 target_link_libraries(course algoritms)
+target_link_libraries(course string)
+
 
