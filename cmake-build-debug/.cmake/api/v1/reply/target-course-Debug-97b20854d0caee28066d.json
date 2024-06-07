@@ -48,12 +48,6 @@
 				"file" : 0,
 				"line" : 19,
 				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 20,
-				"parent" : 0
 			}
 		]
 	},
@@ -86,7 +80,7 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
+			"backtrace" : 4,
 			"id" : "exam::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -123,11 +117,6 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "-lstring",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 5,
 				"fragment" : "libexam.a",
 				"role" : "libraries"
 			},

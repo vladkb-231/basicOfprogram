@@ -16,7 +16,6 @@ add_library(exam
 add_subdirectory(libs)
 target_link_libraries(course data_structures)
 target_link_libraries(course algoritms)
-target_link_libraries(course string)
 target_link_libraries(course exam)
 
 

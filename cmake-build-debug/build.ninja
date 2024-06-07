@@ -77,7 +77,7 @@ build CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj: C_COM
 
 build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c.obj CMakeFiles/course.dir/libs/algoritms/array/array.c.obj CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj | libs/data_structures/libdata_structures.a libs/algoritms/libalgoritms.a libexam.a || libexam.a libs/algoritms/libalgoritms.a libs/data_structures/libdata_structures.a
   FLAGS = -g
-  LINK_LIBRARIES = libs/data_structures/libdata_structures.a  libs/algoritms/libalgoritms.a  -lstring  libexam.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libs/data_structures/libdata_structures.a  libs/algoritms/libalgoritms.a  libexam.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\course.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

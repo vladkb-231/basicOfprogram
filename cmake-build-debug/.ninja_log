@@ -1,6 +1,6 @@
 # ninja log v5
 7	70	7322858168069265	CMakeFiles/course.dir/libs/algoritms/algoritms.c.obj	ccd69139a068c921
-4	108	7377452692751813	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+4	111	7394491611627048	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
 12	110	7322858168468192	CMakeFiles/course.dir/libs/algoritms/array/array.c.obj	7d200144bbc8bd1e
 51	152	7322858168897042	libs/algoritms/CMakeFiles/algoritms.dir/array/array.c.obj	17b3760bd6719c9f
 39	114	7322858168508094	libs/algoritms/CMakeFiles/algoritms.dir/algoritms.c.obj	1ae59b63c09827be
@@ -17,6 +17,11 @@
 12	276	7377447393225828	libstr.a	696ebc2308596085
 10	86	7377452200780913	CMakeFiles/string.dir/string/tasks/string.c.obj	1538fa2e2f3e72bd
 10	83	7377452382269087	libstring.a	cf5cc1121f93bdb3
-13	453	7394486916020041	CMakeFiles/exam.dir/libs/exam/exam.c.obj	61d0daf5e608e577
-5	468	7394486916030016	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
-454	575	7394486917296635	libexam.a	6bbc000fb9cba4d8
+11	135	7394491235951447	CMakeFiles/exam.dir/libs/exam/exam.c.obj	61d0daf5e608e577
+135	247	7394491237108342	libexam.a	6bbc000fb9cba4d8
+6	116	7394500173450405	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+117	253	7394500174816752	course.exe	f5fe2974af4d46c
+4	92	7394500689589125	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+93	220	7394500690855808	course.exe	f5fe2974af4d46c
+3	89	7394501750542347	CMakeFiles/course.dir/main.c.obj	8f879560f2374e1a
+90	233	7394501751968547	course.exe	f5fe2974af4d46c

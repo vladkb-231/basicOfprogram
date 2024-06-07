@@ -3,42 +3,30 @@
 #include <assert.h>
 #include "libs/exam/exam.h"
 
-
-// Тестовые функции
-void testProcessStructWithNull() {
-    printf("Running the test: testProcessStructWithNull\n");
-    processStruct(NULL);
-    printf("The test was completed successfully.\n");
-}
-
-void testProcessStructWithData() {
-    printf("Running the test: testProcessStructWithData\n");
-    MyStruct myStruct = { .data = 5 };
-    processStruct(&myStruct);
-    assert(myStruct.data == 6);
-    printf("The test was completed successfully\n");
-}
-
-// Новый тестовый случай, который вызывает ошибку
-void testProcessStructWithError() {
-    printf("Running the test: testProcessStructWithError\n");
+// Тестовая функция для проверки нулевого указателя
+void testProcessStructNull() {
     MyStruct* myStruct = NULL;
     processStruct(myStruct);
-    assert(myStruct != NULL);
-    printf("The test was completed successfully\n");
+    // Здесь мы ожидаем, что функция не вызовет ошибку сегментации
 }
 
-// Функция, объединяющая все тесты
-void test() {
-    testProcessStructWithNull();
-    testProcessStructWithData();
-    testProcessStructWithError();
+// Тестовая функция для проверки обработки данных структуры
+void testProcessStructData() {
+    MyStruct myStruct;
+    myStruct.data = 5;
+    processStruct(&myStruct);
+    assert(myStruct.data == 6); // Проверяем, что данные увеличились на 1
 }
 
-// Главная функция
+// Объединяющая функция для всех тестов
+void Tests() {
+    testProcessStructNull();
+    testProcessStructData();
+    printf("all tests passed\n");
+}
+
 int main() {
-    // Вызов функции тестирования
-    test();
+    Tests();
 
     return 0;
 }
