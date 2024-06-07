@@ -103,7 +103,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "course::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-course-Debug-46318856470a4f73be71.json",
+					"jsonFile" : "target-course-Debug-90520e4f2cded2bc6c3c.json",
 					"name" : "course",
 					"projectIndex" : 0
 				},
@@ -116,9 +116,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "string::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-string-Debug-ca8de48f368e5f0860b5.json",
-					"name" : "string",
+					"id" : "exam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exam-Debug-cb6447c6bfceb5768329.json",
+					"name" : "exam",
 					"projectIndex" : 0
 				}
 			]

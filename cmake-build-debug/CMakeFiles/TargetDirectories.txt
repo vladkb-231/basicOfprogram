@@ -1,5 +1,5 @@
 D:/course/cmake-build-debug/CMakeFiles/course.dir
-D:/course/cmake-build-debug/CMakeFiles/string.dir
+D:/course/cmake-build-debug/CMakeFiles/exam.dir
 D:/course/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/course/cmake-build-debug/libs/CMakeFiles/edit_cache.dir

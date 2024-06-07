@@ -48,6 +48,12 @@
 				"file" : 0,
 				"line" : 19,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
 			}
 		]
 	},
@@ -80,8 +86,8 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "string::@6890427a1f51a3e7e1df"
+			"backtrace" : 5,
+			"id" : "exam::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
@@ -117,7 +123,12 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "libstring.a",
+				"fragment" : "-lstring",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "libexam.a",
 				"role" : "libraries"
 			},
 			{

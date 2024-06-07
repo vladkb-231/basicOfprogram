@@ -47,7 +47,7 @@ cmake_ninja_workdir = D$:/course/cmake-build-debug/
 #############################################
 # Order-only phony target for course
 
-build cmake_object_order_depends_target_course: phony || cmake_object_order_depends_target_algoritms cmake_object_order_depends_target_data_structures cmake_object_order_depends_target_string
+build cmake_object_order_depends_target_course: phony || cmake_object_order_depends_target_algoritms cmake_object_order_depends_target_data_structures cmake_object_order_depends_target_exam
 
 build CMakeFiles/course.dir/main.c.obj: C_COMPILER__course_unscanned_Debug D$:/course/main.c || cmake_object_order_depends_target_course
   DEP_FILE = CMakeFiles\course.dir\main.c.obj.d
@@ -75,9 +75,9 @@ build CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj: C_COM
 #############################################
 # Link the executable course.exe
 
-build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c.obj CMakeFiles/course.dir/libs/algoritms/array/array.c.obj CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj | libs/data_structures/libdata_structures.a libs/algoritms/libalgoritms.a libstring.a || libs/algoritms/libalgoritms.a libs/data_structures/libdata_structures.a libstring.a
+build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c.obj CMakeFiles/course.dir/libs/algoritms/array/array.c.obj CMakeFiles/course.dir/libs/data_structures/algoritm/algoritms.c.obj | libs/data_structures/libdata_structures.a libs/algoritms/libalgoritms.a libexam.a || libexam.a libs/algoritms/libalgoritms.a libs/data_structures/libdata_structures.a
   FLAGS = -g
-  LINK_LIBRARIES = libs/data_structures/libdata_structures.a  libs/algoritms/libalgoritms.a  libstring.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libs/data_structures/libdata_structures.a  libs/algoritms/libalgoritms.a  -lstring  libexam.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\course.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -86,35 +86,35 @@ build course.exe: C_EXECUTABLE_LINKER__course_Debug CMakeFiles/course.dir/main.c
   TARGET_PDB = course.exe.dbg
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target string
+# Object build statements for STATIC_LIBRARY target exam
 
 
 #############################################
-# Order-only phony target for string
+# Order-only phony target for exam
 
-build cmake_object_order_depends_target_string: phony || CMakeFiles/string.dir
+build cmake_object_order_depends_target_exam: phony || CMakeFiles/exam.dir
 
-build CMakeFiles/string.dir/string/tasks/string.c.obj: C_COMPILER__string_unscanned_Debug D$:/course/string/tasks/string.c || cmake_object_order_depends_target_string
-  DEP_FILE = CMakeFiles\string.dir\string\tasks\string.c.obj.d
+build CMakeFiles/exam.dir/libs/exam/exam.c.obj: C_COMPILER__exam_unscanned_Debug D$:/course/libs/exam/exam.c || cmake_object_order_depends_target_exam
+  DEP_FILE = CMakeFiles\exam.dir\libs\exam\exam.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\string.dir
-  OBJECT_FILE_DIR = CMakeFiles\string.dir\string\tasks
+  OBJECT_DIR = CMakeFiles\exam.dir
+  OBJECT_FILE_DIR = CMakeFiles\exam.dir\libs\exam
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target string
+# Link build statements for STATIC_LIBRARY target exam
 
 
 #############################################
-# Link the static library libstring.a
+# Link the static library libexam.a
 
-build libstring.a: C_STATIC_LIBRARY_LINKER__string_Debug CMakeFiles/string.dir/string/tasks/string.c.obj
+build libexam.a: C_STATIC_LIBRARY_LINKER__exam_Debug CMakeFiles/exam.dir/libs/exam/exam.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\string.dir
+  OBJECT_DIR = CMakeFiles\exam.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = libstring.a
-  TARGET_PDB = string.a.dbg
+  TARGET_FILE = libexam.a
+  TARGET_PDB = exam.a.dbg
 
 
 #############################################
@@ -318,11 +318,11 @@ build course: phony course.exe
 
 build data_structures: phony libs/data_structures/libdata_structures.a
 
+build exam: phony libexam.a
+
 build libalgoritms.a: phony libs/algoritms/libalgoritms.a
 
 build libdata_structures.a: phony libs/data_structures/libdata_structures.a
-
-build string: phony libstring.a
 
 # =============================================================================
 # Folder targets.
@@ -332,7 +332,7 @@ build string: phony libstring.a
 #############################################
 # Folder: D:/course/cmake-build-debug
 
-build all: phony course.exe libstring.a libs/all
+build all: phony course.exe libexam.a libs/all
 
 # =============================================================================
 
